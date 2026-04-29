@@ -63,3 +63,63 @@ Este guia mostra como criar seu primeiro projeto HTML do zero usando o Visual St
     <p>Esta é uma tag de parágrafo.</p>
 </body>
 </html>
+```
+---
+
+# 🎨 Nível 2: Adicionando CSS ao HTML
+
+Agora vamos criar um segundo nível, onde você vai aprender a estilizar a página com CSS.
+
+---
+
+## 📁 1. Criando a pasta Nivel2
+
+1. No VS Code, clique com o botão direito na pasta `projeto`
+2. Clique em **New Folder**
+3. Nomeie como:
+
+---
+
+## 📄 2. Criando o arquivo index.html
+
+1. Clique com botão direito na pasta `Nivel2`
+2. Clique em **New File**
+3. Nomeie como: index.html
+
+---
+
+## 💻 3. Código com CSS
+
+Copie e cole:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 2</title>
+
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial;
+        }
+
+        h1 {
+            color: #ff0000;
+        }
+
+        p {
+            color: #fffb00;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo 2</h1>
+    <p>Este é um parágrafo de exemplo.</p>
+</body>
+</html>
+```
