@@ -1,0 +1,18 @@
+nav {
+    background-color: rgb(107, 107, 107);
+    padding: 16px;
+}
+
+nav a {
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+/*
+Este código CSS estiliza um menu de navegação.
+O seletor "nav" define a aparência da área do menu, aplicando uma cor de fundo
+(cinza) e um espaçamento interno (padding), deixando o conteúdo mais afastado
+das bordas. Já "nav a" estiliza os links dentro do menu, adicionando espaço entre
+eles (margin-right) e removendo o sublinhado padrão dos links (text-decoration: none),
+deixando o visual mais limpo e organizado.
+*/

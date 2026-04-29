@@ -1,0 +1,20 @@
+.galeria img { 
+    margin: 24px;
+    display: grid;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/*
+Este código CSS estiliza uma galeria de imagens usando Grid Layout.
+A classe ".galeria" define um layout em grade (display: grid), organizando
+os elementos em 3 colunas de tamanho igual (repeat(3, 1fr)), com espaçamento
+entre eles (gap: 24px). Já ".galeria img" aplica estilos individuais às imagens,
+adicionando margem externa (margin: 24px). O uso de "display: grid" nas imagens
+não é necessário na maioria dos casos, pois o layout principal já é controlado
+pela div ".galeria".
+*/
