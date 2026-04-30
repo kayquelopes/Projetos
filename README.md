@@ -19,7 +19,7 @@ Este guia mostra como criar seu primeiro projeto HTML do zero usando o Visual St
 1. Abra o **Explorador de Arquivos**
 2. Vá em **Documentos**
 3. Clique com botão direito → **Novo > Pasta**
-4. Nomeie como:
+4. Nomeie como: projeto
 
 ---
 
@@ -35,7 +35,7 @@ Este guia mostra como criar seu primeiro projeto HTML do zero usando o Visual St
 
 - Clique com botão direito na pasta `projeto`
 - Clique em **New Folder**
-- Nomeie como:
+- Nomeie como: Nivel1
 
 ---
 
@@ -43,7 +43,7 @@ Este guia mostra como criar seu primeiro projeto HTML do zero usando o Visual St
 
 - Clique com botão direito em `Nivel1`
 - Clique em **New File**
-- Nomeie como:
+- Nomeie como: index.html
 
 ---
 
@@ -76,7 +76,7 @@ Agora vamos criar um segundo nível, onde você vai aprender a estilizar a pági
 
 1. No VS Code, clique com o botão direito na pasta `projeto`
 2. Clique em **New Folder**
-3. Nomeie como:
+3. Nomeie como: Nivel2
 
 ---
 
