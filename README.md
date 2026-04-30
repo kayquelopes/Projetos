@@ -1,7 +1,18 @@
 # 🧑‍💻 Tutorial Básico: Primeiro Projeto HTML no VS Code
 
 Este guia mostra como criar seu primeiro projeto HTML do zero usando o Visual Studio Code.
-
+---
+> ⚠️ **Aviso importante**
+>
+> Este repositório contém exemplos práticos organizados por níveis (Nivel1, Nivel2, etc).
+>
+> 👉 Dentro de cada pasta existem arquivos com **comentários mais detalhados no código**, explicando passo a passo cada parte.
+>
+> 💡 Recomendo que você:
+> - Leia este README para entender o passo a passo geral  
+> - E abra os arquivos `.html` para ver explicações mais completas dentro do código
+>
+> 🚀 Assim você aprende teoria + prática ao mesmo tempo!
 ---
 
 ## 📌 1. Abrindo o VS Code
