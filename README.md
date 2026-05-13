@@ -1,183 +1,156 @@
-# 🧑‍💻 Tutorial Básico: Primeiro Projeto HTML no VS Code
+# 🧑‍💻 Trilha Progressiva de Desenvolvimento Web
 
-Este guia mostra como criar seu primeiro projeto HTML do zero usando o Visual Studio Code.
----
-> ⚠️ **Aviso importante**
->
-> Este repositório contém exemplos práticos organizados por níveis (Nivel1, Nivel2, etc).
->
-> 👉 Dentro de cada pasta existem arquivos com **comentários mais detalhados no código**, explicando passo a passo cada parte.
->
-> 💡 Recomendo que você:
-> - Leia este README para entender o passo a passo geral  
-> - E abra os arquivos `.html` para ver explicações mais completas dentro do código
->
-> 🚀 Assim você aprende teoria + prática ao mesmo tempo!
----
-
-## 📌 1. Abrindo o VS Code
-
-- Abra o menu iniciar
-- Procure por **Visual Studio Code**
-- Clique para abrir
-
-💡 Dica: fixe o VS Code na barra de tarefas
+## HTML • CSS • JavaScript (Evolução de Arquitetura Front-End)
 
 ---
 
-## 📁 2. Criando a pasta do projeto
+## 📌 Visão Geral
 
-1. Abra o **Explorador de Arquivos**
-2. Vá em **Documentos**
-3. Clique com botão direito → **Novo > Pasta**
-4. Nomeie como: projeto
+Este repositório apresenta uma trilha progressiva de aprendizado em desenvolvimento web front-end, estruturada em níveis.
 
----
+A proposta não é apenas ensinar a criar páginas web, mas demonstrar a **evolução da forma de pensar a construção de interfaces digitais**.
 
-## 📂 3. Abrindo a pasta no VS Code
-
-1. Clique em **File (Arquivo)**
-2. Clique em **Open Folder (Abrir Pasta)**
-3. Selecione a pasta `projeto`
+Cada nível representa uma etapa da evolução técnica do desenvolvedor, partindo de conceitos fundamentais até estruturas próximas de aplicações reais.
 
 ---
 
-## 📁 4. Criando a pasta Nivel1
+## 🧠 Filosofia do Projeto
 
-- Clique com botão direito na pasta `projeto`
-- Clique em **New Folder**
-- Nomeie como: Nivel1
+Este material segue uma abordagem baseada em evolução incremental.
+
+Cada nível:
+
+* apresenta uma implementação completa e funcional
+* introduz novos conceitos técnicos
+* mantém independência em relação aos anteriores
+* demonstra uma evolução de arquitetura e pensamento
+
+O foco principal não é “substituir soluções”, mas **mostrar como o raciocínio técnico evolui ao longo do aprendizado**.
 
 ---
 
-## 📄 5. Criando o arquivo HTML
+# 🧱 Estrutura do Repositório
 
-- Clique com botão direito em `Nivel1`
-- Clique em **New File**
-- Nomeie como: index.html
+```
+/nivel-1
+/nivel-2
+/nivel-3
+/nivel-4
+/nivel-5
+/nivel-6
+/nivel-7
+```
 
 ---
 
-## 💻 6. Código HTML básico
+# 🟢 NÍVEL 1 — ESTRUTURA FUNDAMENTAL DA WEB
+
+## 🧠 Contexto técnico
+
+Este nível introduz os conceitos fundamentais do HTML.
+
+Aqui o desenvolvedor tem o primeiro contato com a estrutura de uma página web, entendendo que o navegador interpreta um documento organizado em elementos hierárquicos.
+
+Não há preocupação com estética ou organização avançada — apenas com a estrutura base.
+
+---
+
+## 💻 Código completo
 
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivel 1</title>
+    <title>Nível 1</title>
 </head>
 
 <body>
-    <h1>Esta é uma tag de título.</h1>
-    <p>Esta é uma tag de parágrafo.</p>
+
+    <h1>Minha primeira página web</h1>
+    <p>Este é o primeiro contato com HTML.</p>
+
 </body>
 </html>
 ```
----
-
-# 🎨 Nível 2: Adicionando CSS ao HTML
-
-Agora vamos criar um segundo nível, onde você vai aprender a estilizar a página com CSS.
 
 ---
 
-## 📁 1. Criando a pasta Nivel2
+# 🔵 NÍVEL 2 — SEPARAÇÃO ENTRE ESTRUTURA E ESTILO
 
-1. No VS Code, clique com o botão direito na pasta `projeto`
-2. Clique em **New Folder**
-3. Nomeie como: Nivel2
+## 🧠 Contexto técnico
 
----
+Neste nível ocorre a introdução do CSS.
 
-## 📄 2. Criando o arquivo index.html
-
-1. Clique com botão direito na pasta `Nivel2`
-2. Clique em **New File**
-3. Nomeie como: index.html
+O principal conceito aprendido é a separação entre estrutura (HTML) e apresentação (CSS), um dos pilares do desenvolvimento web moderno.
 
 ---
 
-## 💻 3. Código com CSS
-
-Copie e cole:
+## 💻 Código completo
 
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivel 2</title>
+    <title>Nível 2</title>
 
     <style>
         body {
-            background-color: #000000;
-            font-family: Arial;
+            background-color: black;
         }
 
         h1 {
-            color: #ff0000;
+            color: white;
         }
 
         p {
-            color: #fffb00;
-            font-size: 20px;
+            color: yellow;
         }
     </style>
-
 </head>
+
 <body>
-    <h1>Exemplo 2</h1>
-    <p>Este é um parágrafo de exemplo.</p>
+
+    <h1>Minha página estilizada</h1>
+    <p>Agora temos estilos aplicados via CSS.</p>
+
 </body>
 </html>
 ```
----
-
-# 📋 Nível 3: Listas no HTML
-
-Agora vamos aprender a usar listas para organizar informações.
 
 ---
 
-## 📁 1. Criando a pasta Nivel3
+# 🟡 NÍVEL 3 — ESTRUTURAÇÃO DE DADOS
 
-1. Clique com botão direito na pasta `projeto`
-2. Clique em **New Folder**
-3. Nomeie como: Nivel3
+## 🧠 Contexto técnico
 
----
+Neste nível o foco passa a ser a organização de informações.
 
-## 📄 2. Criando o arquivo index.html
-
-1. Clique com botão direito na pasta `Nivel3`
-2. Clique em **New File**
-3. Nomeie como: index.html
+O uso de listas permite representar conjuntos de dados estruturados dentro da interface.
 
 ---
 
-## 💻 3. Código com lista
+## 💻 Código completo
 
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivel 3</title>
+    <title>Nível 3</title>
 
     <style>
         ul {
-            font-size: 20px;
-            font-family: Arial, sans-serif;
             color: blue;
+            font-size: 18px;
         }
     </style>
-
 </head>
+
 <body>
+
+    <h1>Minhas tarefas</h1>
 
     <ul>
         <li>Estudar HTML</li>
@@ -188,59 +161,272 @@ Agora vamos aprender a usar listas para organizar informações.
 </body>
 </html>
 ```
----
-
-# 🧱 Nível 4: Organização com DIV + Estilo
-
-Agora vamos organizar melhor o conteúdo usando uma `div` e aplicar estilos visuais mais interessantes.
 
 ---
 
-## 📁 1. Criando a pasta Nivel4
+# 🟠 NÍVEL 4 — AGRUPAMENTO E ESTRUTURA VISUAL
 
-1. Clique com botão direito na pasta `projeto`
-2. Clique em **New Folder**
-3. Nomeie como: Nivel4
+## 🧠 Contexto técnico
 
----
+Aqui o desenvolvedor começa a organizar elementos em blocos.
 
-## 📄 2. Criando o arquivo index.html
-
-1. Clique com botão direito na pasta `Nivel4`
-2. Clique em **New File**
-3. Nomeie como: index.html
+O uso de `div` introduz o conceito de container, permitindo agrupar elementos relacionados e estruturar visualmente a interface.
 
 ---
 
-## 💻 3. Código com layout
+## 💻 Código completo
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivel 4</title>
+    <title>Nível 4</title>
 
     <style>
-        ul {
-            font-size: 20px;
-            font-family: Arial, sans-serif;
-            color: blue;
+        .container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
         }
     </style>
-
 </head>
+
 <body>
 
-    <div style="background-color: rgb(208, 231, 0); border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div class="container">
+        <h1>Minha lista organizada</h1>
+
         <ul>
-            <li>Estudar HTML</li>
-            <li>Estudar CSS</li>
-            <li>Estudar JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
         </ul>
     </div>
-    
+
 </body>
 </html>
 ```
+
+---
+
+# 🟣 NÍVEL 5 — LAYOUT COM CSS GRID
+
+## 🧠 Contexto técnico
+
+O CSS Grid permite a criação de layouts bidimensionais.
+
+Isso representa uma evolução importante, pois o desenvolvedor passa a definir regras de distribuição visual ao invés de posicionamento manual.
+
+---
+
+## 💻 Código completo
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nível 5</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="galeria">
+        <img src="imagens/img1.jpg">
+        <img src="imagens/img2.jpg">
+        <img src="imagens/img3.jpg">
+        <img src="imagens/img4.jpg">
+    </div>
+
+</body>
+</html>
+```
+
+```css
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+img {
+    width: 100%;
+}
+```
+
+---
+
+# 🔴 NÍVEL 6 — NAVEGAÇÃO DE INTERFACE
+
+## 🧠 Contexto técnico
+
+Este nível introduz a construção de navegação dentro de uma interface.
+
+O elemento `<nav>` representa a estrutura de menus e links, permitindo fluxo entre partes de um sistema.
+
+---
+
+## 💻 Código completo
+
+```html
+<nav class="menu">
+    <a href="#">Home</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+</nav>
+```
+
+```css
+.menu {
+    background-color: black;
+    padding: 16px;
+}
+
+.menu a {
+    color: white;
+    margin-right: 16px;
+    text-decoration: none;
+}
+```
+
+---
+
+# ⚫ NÍVEL 7 — ARQUITETURA DE INTERFACE COMPLETA
+
+## 🧠 Contexto técnico
+
+Neste nível, todos os conceitos anteriores são consolidados em uma estrutura completa de interface.
+
+A aplicação passa a ser organizada em seções semânticas bem definidas, aproximando-se de sistemas reais.
+
+---
+
+## 💻 Código completo
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível 7</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="menu">
+        <div class="logo">MinhaLogo</div>
+
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVIÇOS</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Bem-vindo ao site</h1>
+    <p>Estrutura completa de interface utilizando HTML e CSS.</p>
+</main>
+
+<footer class="rodape-principal">
+    <p>Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+## 🎨 CSS — NÍVEL 7
+
+```css
+:root {
+    --cor-primaria: #ffffff;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 12px 24px;
+}
+
+.logo {
+    color: var(--cor-primaria);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: bisque;
+}
+
+/* CONTEÚDO */
+main {
+    padding: 24px;
+    font-family: Arial, sans-serif;
+}
+
+/* RODAPÉ */
+.rodape-principal {
+    background-color: black;
+    color: var(--cor-primaria);
+    padding: 16px;
+    margin-top: 24px;
+    text-align: center;
+}
+```
+
+---
+
+# 🚀 Próxima evolução — NÍVEL 8
+
+O próximo nível introduzirá JavaScript com foco em:
+
+* manipulação do DOM
+* eventos de usuário
+* estado da interface
+* renderização dinâmica
+* introdução de arquitetura estilo framework
+
+---
+
+# 📚 Glossário técnico
+
+* **HTML:** linguagem de estruturação de páginas web
+* **CSS:** linguagem de estilização visual
+* **DOM:** representação estruturada do documento
+* **Grid:** sistema de layout bidimensional
+* **Flexbox:** sistema de layout unidimensional
+* **Semântica:** significado estrutural dos elementos
+* **Container:** agrupamento de elementos
+
+---
+
+# 📌 Conclusão
+
+Este projeto representa uma trilha progressiva de aprendizado em desenvolvimento web, focada na evolução da forma de pensar e estruturar interfaces.
+
