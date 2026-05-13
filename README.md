@@ -410,19 +410,23 @@ main {
 ```
 ---
 
----
-
 # 🟤 NÍVEL 8 — MULTIPÁGINA + RESPONSIVIDADE + INTERAÇÃO COM JAVASCRIPT
 
 ## 🧠 Contexto técnico
+
 Neste nível ocorre uma evolução significativa na arquitetura do projeto: ele deixa de ser uma única página e passa a funcionar como uma aplicação web multipágina com comportamento dinâmico.
+
 O desenvolvedor passa a trabalhar com:
+
 * múltiplas páginas HTML interligadas
 * responsividade com CSS (media queries)
 * manipulação do DOM com JavaScript
 * interação baseada em eventos do usuário
+
 ---
+
 ## 💻 Estrutura do projeto
+
 ```
 /index.html
 /servico.html
@@ -431,221 +435,289 @@ O desenvolvedor passa a trabalhar com:
 /menu.js
 /imagem/
 ```
+
 ---
+
 # 📄 INDEX.HTML — Página principal
+
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Responsivo</title>
-<link rel="stylesheet" href="style.css">
-<script src="menu.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsivo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
 </head>
+
 <body>
+
 <header>
-<div class="logo">web-responsivo</div>
-<div class="menu-icon" onclick="toggleMenu()">
-<img src="imagem/menu.svg" alt="menu">
-</div>
-<ul class="links">
-<li><a href="index.html">HOME</a></li>
-<li><a href="servico.html">SERVIÇOS</a></li>
-<li><a href="contatos.html">CONTATO</a></li>
-</ul>
+    <div class="logo">web-responsivo</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="imagem/menu.svg" alt="menu">
+    </div>
+
+    <ul class="links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contatos.html">CONTATO</a></li>
+    </ul>
 </header>
+
 <section>
-<h2>Bem-vindo ao nosso site responsivo!</h2>
-<p>Disciplina de ferramentas web e UX</p>
-<form>
-<label>
-Usuário
-<input type="email">
-</label>
-<label>
-Senha
-<input type="password">
-</label>
-<button type="submit">Entrar</button>
-</form>
+    <h2>Bem-vindo ao nosso site responsivo!</h2>
+    <p>Disciplina de ferramentas web e UX</p>
+
+    <form>
+        <label>
+            Usuário
+            <input type="email">
+        </label>
+
+        <label>
+            Senha
+            <input type="password">
+        </label>
+
+        <button type="submit">Entrar</button>
+    </form>
 </section>
+
 <footer>
-<p>Copyright © 2026 - Todos os direitos reservados</p>
+    <p>Copyright © 2026 - Todos os direitos reservados</p>
 </footer>
+
 </body>
 </html>
 ```
+
 ---
+
 # 📄 SERVIÇO.HTML — Página de serviços
+
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Serviços</title>
-<link rel="stylesheet" href="style.css">
-<script src="menu.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
 </head>
+
 <body>
+
 <header>
-<div class="logo">serviços</div>
-<div class="menu-icon" onclick="toggleMenu()">
-<img src="imagem/menu.svg" alt="menu">
-</div>
-<ul class="links">
-<li><a href="index.html">HOME</a></li>
-<li><a href="servico.html">SERVIÇOS</a></li>
-<li><a href="contatos.html">CONTATO</a></li>
-</ul>
+    <div class="logo">serviços</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="imagem/menu.svg" alt="menu">
+    </div>
+
+    <ul class="links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contatos.html">CONTATO</a></li>
+    </ul>
 </header>
+
 <section>
-<h2>Nossos Serviços</h2>
-<p>Descrição dos serviços oferecidos.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate obcaecati...</p>
-<ul>
-<li>Serviço 1</li>
-<li>Serviço 2</li>
-<li>Serviço 3</li>
-</ul>
+    <h2>Nossos Serviços</h2>
+
+    <p>Descrição dos serviços oferecidos.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate obcaecati...</p>
+
+    <ul>
+        <li>Serviço 1</li>
+        <li>Serviço 2</li>
+        <li>Serviço 3</li>
+    </ul>
 </section>
+
 <footer>
-<p>Copyright © 2026 - Todos os direitos reservados</p>
+    <p>Copyright © 2026 - Todos os direitos reservados</p>
 </footer>
+
 </body>
 </html>
 ```
+
 ---
+
 # 📄 CONTATOS.HTML — Página de contato
+
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contatos</title>
-<link rel="stylesheet" href="style.css">
-<script src="menu.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
 </head>
+
 <body>
+
 <header>
-<div class="logo">contatos</div>
-<div class="menu-icon" onclick="toggleMenu()">
-<img src="imagem/menu.svg" alt="menu">
-</div>
-<ul class="links">
-<li><a href="index.html">HOME</a></li>
-<li><a href="servico.html">SERVIÇOS</a></li>
-<li><a href="contatos.html">CONTATO</a></li>
-</ul>
+    <div class="logo">contatos</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="imagem/menu.svg" alt="menu">
+    </div>
+
+    <ul class="links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contatos.html">CONTATO</a></li>
+    </ul>
 </header>
+
 <section>
-<h2>Entre em contato conosco</h2>
-<form>
-<label>
-Nome
-<input type="text">
-</label>
-<label>
-Email
-<input type="email">
-</label>
-<label>
-Mensagem
-<textarea></textarea>
-</label>
-<button type="submit">Enviar</button>
-</form>
+    <h2>Entre em contato conosco</h2>
+
+    <form>
+        <label>
+            Nome
+            <input type="text">
+        </label>
+
+        <label>
+            Email
+            <input type="email">
+        </label>
+
+        <label>
+            Mensagem
+            <textarea></textarea>
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
 </section>
+
 <footer>
-<p>Copyright © 2026 - Todos os direitos reservados</p>
+    <p>Copyright © 2026 - Todos os direitos reservados</p>
 </footer>
+
 </body>
 </html>
 ```
+
 ---
+
 # ⚙️ MENU.JS — Interatividade
+
 ```javascript
 function toggleMenu() {
-const links = document.querySelector('.links');
-links.classList.toggle('active');
+    const links = document.querySelector('.links');
+    links.classList.toggle('active');
 }
 ```
+
 ---
+
 # 🎨 STYLE.CSS — Responsividade
+
 ```css
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: rgb(56,56,56);
-color: white;
-display: grid;
-grid-template-rows: min-content 1fr min-content;
-min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(56,56,56);
+    color: white;
+
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100vh;
 }
+
 header {
-display: flex;
-justify-content: space-between;
-padding: 24px;
-background-color: rgb(99,99,99);
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: rgb(99,99,99);
 }
+
 .logo {
-font-size: 32px;
+    font-size: 32px;
 }
+
 .links {
-display: flex;
-gap: 16px;
+    display: flex;
+    gap: 16px;
 }
+
 .links li {
-list-style: none;
+    list-style: none;
 }
+
 .links a {
-background: white;
-padding: 8px 16px;
-color: black;
-text-decoration: none;
-border-radius: 4px;
+    background: white;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
 }
+
 .menu-icon {
-display: none;
+    display: none;
 }
+
 section {
-max-width: 700px;
-margin: 0 auto;
-padding: 24px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px;
 }
+
 footer {
-padding: 16px;
-background-color: rgb(99,99,99);
-text-align: center;
+    padding: 16px;
+    background-color: rgb(99,99,99);
+    text-align: center;
 }
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
-.links {
-display: none;
-flex-direction: column;
-position: absolute;
-top: 70px;
-right: 0;
-width: 100%;
-background: white;
-}
-.links.active {
-display: flex;
-}
-.menu-icon {
-display: block;
-}
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: white;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
 }
 ```
+
 ---
+
 # 🧠 Conclusão do Nível 8
+
 Neste nível o sistema evolui para:
+
 > uma aplicação web simples com múltiplas páginas, responsividade e interação dinâmica via JavaScript
+
 ---
 
 # 🚀 Conclusão Geral
