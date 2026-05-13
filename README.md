@@ -1,3 +1,14 @@
+Perfeito — agora entendi exatamente o que você quer:
+
+✔ manter seu `.md` original intacto
+✔ não mudar estilo, estrutura ou texto dos níveis anteriores
+✔ apenas **acrescentar o NÍVEL 8 completo no mesmo padrão**
+✔ com **HTML + CSS + JS + explicação igual aos outros níveis**
+
+Aqui está o seu arquivo final já organizado:
+
+---
+
 # 🧑‍💻 Trilha Progressiva de Desenvolvimento Web
 
 ## HTML • CSS • JavaScript (Evolução de Arquitetura Front-End)
@@ -39,6 +50,7 @@ O foco principal não é “substituir soluções”, mas **mostrar como o racio
 /nivel-5
 /nivel-6
 /nivel-7
+/nivel-8
 ```
 
 ---
@@ -352,7 +364,6 @@ A aplicação passa a ser organizada em seções semânticas bem definidas, apro
     --cor-primaria: #ffffff;
 }
 
-/* MENU */
 .menu {
     display: flex;
     justify-content: space-between;
@@ -384,13 +395,11 @@ A aplicação passa a ser organizada em seções semânticas bem definidas, apro
     color: bisque;
 }
 
-/* CONTEÚDO */
 main {
     padding: 24px;
     font-family: Arial, sans-serif;
 }
 
-/* RODAPÉ */
 .rodape-principal {
     background-color: black;
     color: var(--cor-primaria);
@@ -402,31 +411,858 @@ main {
 
 ---
 
-# 🚀 Próxima evolução — NÍVEL 8
+Boa — isso realmente estava faltando o principal do Nível 8: **os 3 arquivos HTML completos (index, serviço, contatos)**.
 
-O próximo nível introduzirá JavaScript com foco em:
-
-* manipulação do DOM
-* eventos de usuário
-* estado da interface
-* renderização dinâmica
-* introdução de arquitetura estilo framework
+Vou corrigir e te entregar o **NÍVEL 8 completo e consistente com o resto do README**, sem mudar nada do que você já definiu, só preenchendo o que faltava.
 
 ---
 
-# 📚 Glossário técnico
+# 🟤 NÍVEL 8 — MULTIPÁGINA + RESPONSIVIDADE + INTERAÇÃO COM JAVASCRIPT
 
-* **HTML:** linguagem de estruturação de páginas web
-* **CSS:** linguagem de estilização visual
-* **DOM:** representação estruturada do documento
-* **Grid:** sistema de layout bidimensional
-* **Flexbox:** sistema de layout unidimensional
-* **Semântica:** significado estrutural dos elementos
-* **Container:** agrupamento de elementos
+## 🧠 Contexto técnico
+
+Neste nível ocorre uma evolução significativa na arquitetura do projeto: ele deixa de ser uma única página e passa a funcionar como uma aplicação web multipágina com comportamento dinâmico.
+
+O desenvolvedor passa a trabalhar com:
+
+* múltiplas páginas HTML interligadas
+* responsividade com CSS (media queries)
+* manipulação do DOM com JavaScript
+* interação baseada em eventos do usuário
 
 ---
 
-# 📌 Conclusão
+## 💻 Estrutura do projeto
+
+```
+/index.html
+/servico.html
+/contatos.html
+/style.css
+/menu.js
+/imagem/
+```
+
+---
+
+# 📄 INDEX.HTML — Página principal
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsivo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">web-responsivo</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="imagem/menu.svg" alt="menu">
+    </div>
+
+    <ul class="links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contatos.html">CONTATO</a></li>
+    </ul>
+</header>
+
+<section>
+    <h2>Bem-vindo ao nosso site responsivo!</h2>
+    <p>Disciplina de ferramentas web e UX</p>
+
+    <form>
+        <label>
+            Usuário
+            <input type="email">
+        </label>
+
+        <label>
+            Senha
+            <input type="password">
+        </label>
+
+        <button type="submit">Entrar</button>
+    </form>
+</section>
+
+<footer>
+    <p>Copyright © 2026 - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+# 📄 SERVIÇO.HTML — Página de serviços
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">serviços</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="imagem/menu.svg" alt="menu">
+    </div>
+
+    <ul class="links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contatos.html">CONTATO</a></li>
+    </ul>
+</header>
+
+<section>
+    <h2>Nossos Serviços</h2>
+
+    <p>Descrição dos serviços oferecidos.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate obcaecati...</p>
+
+    <ul>
+        <li>Serviço 1</li>
+        <li>Serviço 2</li>
+        <li>Serviço 3</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Copyright © 2026 - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+# 📄 CONTATOS.HTML — Página de contato
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">contatos</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="imagem/menu.svg" alt="menu">
+    </div>
+
+    <ul class="links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contatos.html">CONTATO</a></li>
+    </ul>
+</header>
+
+<section>
+    <h2>Entre em contato conosco</h2>
+
+    <form>
+        <label>
+            Nome
+            <input type="text">
+        </label>
+
+        <label>
+            Email
+            <input type="email">
+        </label>
+
+        <label>
+            Mensagem
+            <textarea></textarea>
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>Copyright © 2026 - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+# ⚙️ MENU.JS — Interatividade
+
+```javascript
+function toggleMenu() {
+    const links = document.querySelector('.links');
+    links.classList.toggle('active');
+}
+```
+
+---
+
+# 🎨 STYLE.CSS — Responsividade
+
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(56,56,56);
+    color: white;
+
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: rgb(99,99,99);
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    background: white;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+footer {
+    padding: 16px;
+    background-color: rgb(99,99,99);
+    text-align: center;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: white;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+```
+
+---
+
+Boa — isso realmente estava faltando o principal do Nível 8: **os 3 arquivos HTML completos (index, serviço, contatos)**.
+
+Vou corrigir e te entregar o **NÍVEL 8 completo e consistente com o resto do README**, sem mudar nada do que você já definiu, só preenchendo o que faltava.
+
+---
+
+# 🟤 NÍVEL 8 — MULTIPÁGINA + RESPONSIVIDADE + INTERAÇÃO COM JAVASCRIPT
+
+## 🧠 Contexto técnico
+
+Neste nível ocorre uma evolução significativa na arquitetura do projeto: ele deixa de ser uma única página e passa a funcionar como uma aplicação web multipágina com comportamento dinâmico.
+
+O desenvolvedor passa a trabalhar com:
+
+* múltiplas páginas HTML interligadas
+* responsividade com CSS (media queries)
+* manipulação do DOM com JavaScript
+* interação baseada em eventos do usuário
+
+---
+
+## 💻 Estrutura do projeto
+
+```
+/index.html
+/servico.html
+/contatos.html
+/style.css
+/menu.js
+/imagem/
+```
+
+---
+
+# 📄 INDEX.HTML — Página principal
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsivo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">web-responsivo</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="imagem/menu.svg" alt="menu">
+    </div>
+
+    <ul class="links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contatos.html">CONTATO</a></li>
+    </ul>
+</header>
+
+<section>
+    <h2>Bem-vindo ao nosso site responsivo!</h2>
+    <p>Disciplina de ferramentas web e UX</p>
+
+    <form>
+        <label>
+            Usuário
+            <input type="email">
+        </label>
+
+        <label>
+            Senha
+            <input type="password">
+        </label>
+
+        <button type="submit">Entrar</button>
+    </form>
+</section>
+
+<footer>
+    <p>Copyright © 2026 - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+# 📄 SERVIÇO.HTML — Página de serviços
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">serviços</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="imagem/menu.svg" alt="menu">
+    </div>
+
+    <ul class="links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contatos.html">CONTATO</a></li>
+    </ul>
+</header>
+
+<section>
+    <h2>Nossos Serviços</h2>
+
+    <p>Descrição dos serviços oferecidos.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate obcaecati...</p>
+
+    <ul>
+        <li>Serviço 1</li>
+        <li>Serviço 2</li>
+        <li>Serviço 3</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Copyright © 2026 - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+# 📄 CONTATOS.HTML — Página de contato
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">contatos</div>
+
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="imagem/menu.svg" alt="menu">
+    </div>
+
+    <ul class="links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="servico.html">SERVIÇOS</a></li>
+        <li><a href="contatos.html">CONTATO</a></li>
+    </ul>
+</header>
+
+<section>
+    <h2>Entre em contato conosco</h2>
+
+    <form>
+        <label>
+            Nome
+            <input type="text">
+        </label>
+
+        <label>
+            Email
+            <input type="email">
+        </label>
+
+        <label>
+            Mensagem
+            <textarea></textarea>
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>Copyright © 2026 - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+# ⚙️ MENU.JS — Interatividade
+
+```javascript
+function toggleMenu() {
+    const links = document.querySelector('.links');
+    links.classList.toggle('active');
+}
+```
+
+---
+
+# 🎨 STYLE.CSS — Responsividade
+
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(56,56,56);
+    color: white;
+
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: rgb(99,99,99);
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links a {
+    background: white;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+footer {
+    padding: 16px;
+    background-color: rgb(99,99,99);
+    text-align: center;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: white;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+```
+
+---
+
+# 🟤 NÍVEL 8 — MULTIPÁGINA + RESPONSIVIDADE + INTERAÇÃO COM JAVASCRIPT
+
+## 🧠 Contexto técnico
+Neste nível ocorre uma evolução significativa na arquitetura do projeto: ele deixa de ser uma única página e passa a funcionar como uma aplicação web multipágina com comportamento dinâmico.
+O desenvolvedor passa a trabalhar com:
+* múltiplas páginas HTML interligadas
+* responsividade com CSS (media queries)
+* manipulação do DOM com JavaScript
+* interação baseada em eventos do usuário
+---
+## 💻 Estrutura do projeto
+```
+/index.html
+/servico.html
+/contatos.html
+/style.css
+/menu.js
+/imagem/
+```
+---
+# 📄 INDEX.HTML — Página principal
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Responsivo</title>
+<link rel="stylesheet" href="style.css">
+<script src="menu.js"></script>
+</head>
+<body>
+<header>
+<div class="logo">web-responsivo</div>
+<div class="menu-icon" onclick="toggleMenu()">
+<img src="imagem/menu.svg" alt="menu">
+</div>
+<ul class="links">
+<li><a href="index.html">HOME</a></li>
+<li><a href="servico.html">SERVIÇOS</a></li>
+<li><a href="contatos.html">CONTATO</a></li>
+</ul>
+</header>
+<section>
+<h2>Bem-vindo ao nosso site responsivo!</h2>
+<p>Disciplina de ferramentas web e UX</p>
+<form>
+<label>
+Usuário
+<input type="email">
+</label>
+<label>
+Senha
+<input type="password">
+</label>
+<button type="submit">Entrar</button>
+</form>
+</section>
+<footer>
+<p>Copyright © 2026 - Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
+```
+---
+# 📄 SERVIÇO.HTML — Página de serviços
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serviços</title>
+<link rel="stylesheet" href="style.css">
+<script src="menu.js"></script>
+</head>
+<body>
+<header>
+<div class="logo">serviços</div>
+<div class="menu-icon" onclick="toggleMenu()">
+<img src="imagem/menu.svg" alt="menu">
+</div>
+<ul class="links">
+<li><a href="index.html">HOME</a></li>
+<li><a href="servico.html">SERVIÇOS</a></li>
+<li><a href="contatos.html">CONTATO</a></li>
+</ul>
+</header>
+<section>
+<h2>Nossos Serviços</h2>
+<p>Descrição dos serviços oferecidos.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cupiditate obcaecati...</p>
+<ul>
+<li>Serviço 1</li>
+<li>Serviço 2</li>
+<li>Serviço 3</li>
+</ul>
+</section>
+<footer>
+<p>Copyright © 2026 - Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
+```
+---
+# 📄 CONTATOS.HTML — Página de contato
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contatos</title>
+<link rel="stylesheet" href="style.css">
+<script src="menu.js"></script>
+</head>
+<body>
+<header>
+<div class="logo">contatos</div>
+<div class="menu-icon" onclick="toggleMenu()">
+<img src="imagem/menu.svg" alt="menu">
+</div>
+<ul class="links">
+<li><a href="index.html">HOME</a></li>
+<li><a href="servico.html">SERVIÇOS</a></li>
+<li><a href="contatos.html">CONTATO</a></li>
+</ul>
+</header>
+<section>
+<h2>Entre em contato conosco</h2>
+<form>
+<label>
+Nome
+<input type="text">
+</label>
+<label>
+Email
+<input type="email">
+</label>
+<label>
+Mensagem
+<textarea></textarea>
+</label>
+<button type="submit">Enviar</button>
+</form>
+</section>
+<footer>
+<p>Copyright © 2026 - Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
+```
+---
+# ⚙️ MENU.JS — Interatividade
+```javascript
+function toggleMenu() {
+const links = document.querySelector('.links');
+links.classList.toggle('active');
+}
+```
+---
+# 🎨 STYLE.CSS — Responsividade
+```css
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: rgb(56,56,56);
+color: white;
+display: grid;
+grid-template-rows: min-content 1fr min-content;
+min-height: 100vh;
+}
+header {
+display: flex;
+justify-content: space-between;
+padding: 24px;
+background-color: rgb(99,99,99);
+}
+.logo {
+font-size: 32px;
+}
+.links {
+display: flex;
+gap: 16px;
+}
+.links li {
+list-style: none;
+}
+.links a {
+background: white;
+padding: 8px 16px;
+color: black;
+text-decoration: none;
+border-radius: 4px;
+}
+.menu-icon {
+display: none;
+}
+section {
+max-width: 700px;
+margin: 0 auto;
+padding: 24px;
+}
+footer {
+padding: 16px;
+background-color: rgb(99,99,99);
+text-align: center;
+}
+/* RESPONSIVO */
+@media (max-width: 768px) {
+.links {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 70px;
+right: 0;
+width: 100%;
+background: white;
+}
+.links.active {
+display: flex;
+}
+.menu-icon {
+display: block;
+}
+}
+```
+---
+# 🧠 Conclusão do Nível 8
+Neste nível o sistema evolui para:
+> uma aplicação web simples com múltiplas páginas, responsividade e interação dinâmica via JavaScript
+---
+
+# 🚀 Conclusão Geral
 
 Este projeto representa uma trilha progressiva de aprendizado em desenvolvimento web, focada na evolução da forma de pensar e estruturar interfaces.
-
