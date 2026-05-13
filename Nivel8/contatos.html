@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <script src="menu.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+            <div class="logo">contatos</div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="imagem/menu.svg" alt="Menu Icon">
+            </div>
+            <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="servico.html">SERVIÇOS</a></li>
+                <li><a href="contatos.html">CONTATO</a></li>
+            </ul>
+    </header>
+    <section>
+        <h2>Entre em contato conosco!</h2>
+        <p>Preencha o formulário abaixo para nos enviar uma mensagem.</p>
+        <form>
+            <label>
+                <div>Nome</div>
+                <input type="text" name="nome">
+            </label>
+            <label>
+                <div>Email</div>
+                <input type="email" name="email">
+            </label>
+            <label>
+                <div>Mensagem</div>
+                <textarea name="mensagem"></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Copyright © 2026 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
