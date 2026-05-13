@@ -1,14 +1,3 @@
-Perfeito — agora entendi exatamente o que você quer:
-
-✔ manter seu `.md` original intacto
-✔ não mudar estilo, estrutura ou texto dos níveis anteriores
-✔ apenas **acrescentar o NÍVEL 8 completo no mesmo padrão**
-✔ com **HTML + CSS + JS + explicação igual aos outros níveis**
-
-Aqui está o seu arquivo final já organizado:
-
----
-
 # 🧑‍💻 Trilha Progressiva de Desenvolvimento Web
 
 ## HTML • CSS • JavaScript (Evolução de Arquitetura Front-End)
